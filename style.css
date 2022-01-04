@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background-color: #E8FFFB;
+}
+
+.main-wrapper {
+    margin: auto;
+    width: 50vw;
+    min-width: 650px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.title {
+    color: #658F88;
+}
+.title, .text-wrapper, textarea, .buttons-wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+textarea, textarea:focus{
+    resize: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+    border: 1px solid #658F88;
+    color: #28423E;
+    border-radius: 10px;
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+button {
+    width: 23%;
+    height: 40px;
+    font-size: 15px;
+    padding: 6px 5px 5px;
+    background-color: #658F88;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+button:active {
+    background-color: #28423E;
+}
+
+@media (max-width: 720px) {
+
+    .buttons-wrapper {
+        flex-wrap: wrap;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .buttons-wrapper button {
+        width: 200px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .main-wrapper {
+        width: 90%;
+        min-width: unset;
+    }
+    textarea, textarea:focus{ 
+        font-size: 14.5px;
+    }
+} 
