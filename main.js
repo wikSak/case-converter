@@ -17,6 +17,7 @@ properCase.addEventListener('click', () => {
 });
 
 sentenceCase.addEventListener("click", function update() {
+    text = document.getElementById("textarea").value;
     textArea.style.textTransform = "unset";
     text = text.toLowerCase().replace(/^\w|(\.|!|\?)( *)\w/g,function(a){return a.toUpperCase()});
     textArea.value = text;
